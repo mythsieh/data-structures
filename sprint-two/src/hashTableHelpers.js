@@ -14,6 +14,9 @@
 var LimitedArray = function(limit){
   var storage = [];
 
+  // earlier: 'val1'
+  // now:     ['k1', 'val1']  ( array[1] => 'val1' )
+
   var limitedArray = {};
   limitedArray.get = function(index){
     checkLimit(index);
